@@ -1,0 +1,13 @@
+today=$(date '+%Y-%m-%d')
+count=$(eval "ls -la ~/Desktop | grep Screen\ Shot\ $today | wc -l | tr -d '[:space:]'")
+dir="screenshots_$today"
+if [ $count == 0 ]; then
+  echo No new screenshots today at: ~/Desktop
+  exit
+fi
+if [ ! -d ~/Desktop/$dir ]; then
+  echo Making new folder at: ~/Desktop/$dir
+  mkdir ~/Desktop/$dir
+fi
+echo Moving $count screenshots from today into ~/Desktop/$dir
+eval "mv ~/Desktop/Screen\ Shot*$today* ~/Desktop/$dir"
