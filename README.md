@@ -1,6 +1,6 @@
 # ssmv-today (Screenshot Move Today)
 
-Command line tool to move all macOS creenshots taken today into a folder labeled `screenshots_YYYY-MM-DD`.
+Command line tool to move all macOS screenshots taken today into a folder labeled `screenshots_YYYY-MM-DD`.
 
 ## Installation
 
