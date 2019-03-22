@@ -1,3 +1,5 @@
+#!/bin/sh
+
 today=$(date '+%Y-%m-%d')
 count=$(eval "ls -la ~/Desktop | grep Screen\ Shot\ $today | wc -l | tr -d '[:space:]'")
 dir="screenshots_$today"
