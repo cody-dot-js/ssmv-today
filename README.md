@@ -2,6 +2,8 @@
 
 Command line tool to move all macOS screenshots taken today into a folder labeled `screenshots_YYYY-MM-DD`.
 
+See also: [ssmv](https://github.com/dev-cprice/ssmv)
+
 ## Installation
 
 In your terminal, run the following commands:
